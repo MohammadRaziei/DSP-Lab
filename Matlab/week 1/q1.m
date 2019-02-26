@@ -1,0 +1,76 @@
+clc;clear all;close all
+t = 0:0.01:2;
+amp = 5;
+f = 1;
+y = amp * sin(2 * pi * t * f);
+%%
+% figure(1)
+% subplot(2,1,1)
+% plot(t,y);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('sin');
+% figure(2)
+% subplot(2,1,1)
+% stem(t,y);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('sin');
+%%
+n = rand(size(t))-0.5;
+yn = y + n;
+% figure(1)
+% subplot(2,1,2)
+% plot(t,yn);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('sin');
+% 
+% figure(2)
+% subplot(2,1,2)
+% stem(t,yn);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('sin');
+%%
+moving = ones(1,21)*1/21;
+yf = conv(yn,moving);
+% figure(3)
+% % subplot(2,1,2)
+% plot(((1:length(yf))-10)/100, yf);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('conv');
+
+%%
+windowSize = 21;
+a =1;
+b = (1/windowSize)*ones(1,windowSize);
+% y_d = filter(b,a,yn);
+% plot(((1:length(y_d))-0)/100, y_d);
+% xlabel('time');
+% ylabel('5 * Sin(2*pi*1*t)');
+% title('conv');
+
+%%
+% yc = singen(0.1,200);
+% plot(yc)
+%%
+x = 0:0.01:4;
+y =@(x) cos(2 * pi * x) + cos(8 * pi * x) + cos(12 * pi * x);
+figure
+plot(x, y(x));
+xs = 0:0.2:4;
+plot(x, y(x));
+hold on
+plot(xs,y(xs),'o')
+filter(,1,y(xs))
+
+
+
+
+
+
+
+
+
