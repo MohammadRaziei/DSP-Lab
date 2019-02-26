@@ -27,8 +27,23 @@ xlabel('time');
 ys = zeros(1,length(y)*3);
 ys(1:3:length(ys)) = y;
 Ts = t(2)-t(1);
-hr =@(x,Ts,Sn,Sm) sinc( repmat(x+Ts,Sn,1) - repmat(((1:Sn)*Ts)' , 1 , Sm) / Ts );
-hr(t,Ts,256,256*3);
+hr =@(t_r,Ts,Sn) sinc( ( repmat(t_r + Ts - min(t_r),Sn,1) - repmat(((1:Sn)*Ts)' , 1 , length(t_r)) ) / Ts );
+t_re = linspace(-5,5,256*3);
+y_re = y * hr(t_re,Ts,256);
+%% plot 3 * fr
+figure
+subplot(211);
+plot(t,y,'o');hold on
+plot(t_re,y_re)
+xlabel('time');
+
+H3s = freqz(ys,1,W);
+H3ss = freqz(y_re,1,W);
+subplot(212);
+plot((W/pi) , abs(H3s));hold on
+plot((W/pi) , abs(H3ss));
+xlabel('freq');
+% close all
 
 
 
