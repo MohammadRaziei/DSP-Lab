@@ -71,7 +71,7 @@ plot(xn,yn,'o')
 arg_sinc = repmat(x+(xn(2) - xn(1)),size(yn,2),1  ) - repmat(((1:size(yn,2))*(xn(2)-xn(1)))' , 1 , size(ym,2));
 hr = sinc( arg_sinc / (xn(2) - xn(1)) );
 y_re = yn * hr;
-figure
+% figure
 plot(x,y_re)
 % hold on
 % plot(xn,yn)
