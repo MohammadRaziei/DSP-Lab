@@ -32,9 +32,10 @@ xlabel('time');
 ys = zeros(1,length(y)*3);
 ys(1:3:length(ys)) = y;
 Ts = t(2)-t(1);
-hr =@(t_r,Ts,Sn) sinc( ( repmat(t_r + Ts - min(t_r),Sn,1) - repmat(((1:Sn)*Ts)' , 1 , length(t_r)) ) / Ts );
+% hr =@(t_r,Ts,Sn) sinc( ( repmat(t_r + Ts - min(t_r),Sn,1) - repmat(((1:Sn)*Ts)' , 1 , length(t_r)) ) / Ts );
 t_re = linspace(-5,5,256*3);
-y_re = y * hr(t_re,Ts,256);
+% y_re = y * H_sinc_inter(t_re,Ts,256);
+y_re = sinc_inter(t_re,y,3);
 %% plot 3 * fr || plot C
 figure
 subplot(212);
