@@ -37,14 +37,14 @@ t_re = linspace(-5,5,256*3);
 y_re = y * hr(t_re,Ts,256);
 %% plot 3 * fr || plot C
 figure
-subplot(211);
+subplot(212);
 plot(t,y,'o');hold on
 plot(t_re,y_re)
 xlabel('time');
 
 H3s = freqz(ys,1,W);
 H3ss = freqz(y_re,1,W);
-subplot(212);
+subplot(211);
 plot((W/pi) , abs(H3s));hold on
 plot((W/pi) , abs(H3ss));
 xlabel('freq');
