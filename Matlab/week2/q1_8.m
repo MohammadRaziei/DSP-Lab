@@ -41,13 +41,17 @@ subplot(212);
 plot(t,y,'o');hold on
 plot(t_re,y_re)
 xlabel('time');
+legend('y : Fs = fs','y_{re} : Fs = 3 fs');
 
 H3s = freqz(ys,1,W);
 H3ss = freqz(y_re,1,W);
 subplot(211);
-plot((W/pi) , abs(H3s));hold on
+hold on;
+plot((W/pi) , abs(Hs));
+plot((W/pi) , abs(H3s));
 plot((W/pi) , abs(H3ss));
 xlabel('freq');
+legend('y','y_{zero padding}','y_{reconstructed}')
 % close all
 
 
