@@ -40,9 +40,9 @@ y_re = sinc_inter(t_re,y,3);
 figure
 subplot(212);
 plot(t,y,'o');hold on
-plot(t_re,y_re)
+plot(t_re,y_re,'*')
 xlabel('time');
-legend('y : Fs = fs','y_{re} : Fs = 3 fs');
+legend('y : F_s = f_s','y_{re} : F_s = 3 f_s');
 
 H3s = freqz(ys,1,W);
 H3ss = freqz(y_re,1,W);
