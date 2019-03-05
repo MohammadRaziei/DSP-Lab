@@ -9,14 +9,17 @@ x = zeros(size(t));
 for fi = pi.*[ 1/16,5/16,9/16,13/16]
     x = x + cos(2*pi*fi*t);
 end
-%% plot fft and fftshift
+%% a) plot fft and fftshift
 fft_x = fft(x,512);
 fftshift_x = fftshift(fft_x);
 W_fft =  linspace(0,2*pi,length(fft_x));
 W_fftshift =  linspace(-pi,pi,length(fftshift_x));
 
 figure;
-subplot(211);   plot(W_fft/pi,abs(fft_x)); xlabel('fft');
-subplot(212);   plot(W_fftshift/pi,abs(fftshift_x)); xlabel('fftshift');
+subplot(211);   plot(W_fft/pi,abs(fft_x),'r'); xlabel('fft');
+subplot(212);   plot(W_fftshift/pi,abs(fftshift_x),'g'); xlabel('fftshift');
 
-%%
+%% b) xlsread
+snz = xlsread('filters.xls',1);
+cmb = xlsread('filters.xls',2);
+ 
