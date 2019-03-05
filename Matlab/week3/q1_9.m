@@ -33,21 +33,21 @@ flt2 = zeros(size(flt));
 flt2(1,:) = flt(1,:) * 2;
 flt2(3,:) = flt(3,:);
 flt2(4,:) = flt(4,:) * 0.5;
-
+% upsample
 flt3 = zeros(4,size(flt,2)*4);
 flt3(:,1:4:length(flt3)) = flt2; 
 
 y = 0;
 for i = 1:4
     flt_temp = filter(F(i,:),1,flt3(i,:));
-%     flt_temp = flt_temp(1:4:length(flt_temp));
     y = y + flt_temp;
 end
+
 %% plot x,y
 fftshift_y = fftshift(fft(y,512));
 figure; hold on;
-plot(W_fftshift/pi,abs(fftshift_x),'r'); xlabel('fftshift : x');
-plot(W_fftshift/pi,abs(fftshift_y),'g'); xlabel('fftshift : y');
+plot(W_fftshift/pi,abs(fftshift_x),'r'); %xlabel('fftshift : x');
+plot(W_fftshift/pi,abs(fftshift_y),'g'); %xlabel('fftshift : y');
 
 
 
