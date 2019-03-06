@@ -20,7 +20,7 @@ subplot(212);   plot(W_fftshift/pi,abs(fftshift_x),'g'); xlabel('fftshift');
 close all;
 H = xlsread('filters.xls',1);
 F = xlsread('filters.xls',2);
- %% c) H -> F
+%% c) H -> F
  flt = [];
 for i = 1:4
     flt_temp = filter(H(i,:),1,x);
@@ -48,8 +48,7 @@ fftshift_y = fftshift(fft(y,512));
 figure; hold on;
 plot(W_fftshift/pi,abs(fftshift_x),'r'); %xlabel('fftshift : x');
 plot(W_fftshift/pi,abs(fftshift_y),'g'); %xlabel('fftshift : y');
-
-
+legend('fftshift : x','fftshift : y');
 
 
  
