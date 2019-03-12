@@ -11,4 +11,5 @@ h = 0.1*ones(1,10);
 t= 1:200;
 x = square(2*pi/50*t);
 % stem(x)
-
+y = myconv(h,x);
+stem(y)
