@@ -16,7 +16,11 @@ y = myconv(h,x);
 %% c) use myconv
 h = 0.25*(0.75).^(1:14);
 t= 1:200;
-x = square(2*pi/50*t);
 % stem(x)
 y = myconv(h,x);
+% stem(y)
+%% d) use myconv
+H = 0.2 * conv([1,-1],conv([1,-1],conv([1,-1],conv([1,-1],[1,-1]))));
+y = myconv(h,x);
 stem(y)
+
