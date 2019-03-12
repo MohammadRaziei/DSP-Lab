@@ -12,4 +12,11 @@ t= 1:200;
 x = square(2*pi/50*t);
 % stem(x)
 y = myconv(h,x);
+% stem(y)
+%% c) use myconv
+h = 0.25*(0.75).^(1:14);
+t= 1:200;
+x = square(2*pi/50*t);
+% stem(x)
+y = myconv(h,x);
 stem(y)
