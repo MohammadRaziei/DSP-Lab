@@ -17,7 +17,6 @@ y = filter(Num,1,s'.*y0);
 y0_new = filter(Num,1,y);
 y_new = filter(Num,1,s'.*y0_new);
 
-% sound(5*y_new,fs);
+sound(y_new,fs);
 
-% s = con(
-% conv(nu,m
+%% c) 
