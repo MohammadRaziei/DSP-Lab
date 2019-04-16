@@ -14,9 +14,8 @@ s = 2*cos(2*pi*f0/fs*n);
 y0 = filter(Num,1,aud);
 y = filter(Num,1,s'.*y0);
 
+% sound(y,fs);
+%% c) 
 y0_new = filter(Num,1,y);
 y_new = filter(Num,1,s'.*y0_new);
-
-sound(y_new,fs);
-
-%% c) 
+% sound(y_new,fs);
