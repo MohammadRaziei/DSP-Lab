@@ -15,10 +15,12 @@ fft_x = fft(x,512);
 fftshift_x = fftshift(fft_x);
 W_fftshift =  linspace(-pi,pi,length(fftshift_x));
 
-plot(W_fftshift/pi,abs(fftshift_x),'g'); xlabel('fftshift');
+figure;plot(W_fftshift/pi,abs(fftshift_x),'g'); xlabel('fftshift');
 %% spectrogram
-spec = spectrogram(x);
-Hamming(256)
+figure
+spectrogram(x,hamming(256));
+figure
+spectrogram(x,hamming(512));
 
 
 
