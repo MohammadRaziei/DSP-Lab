@@ -1,5 +1,7 @@
 clc; clear all; close all;
 %%
+gray =@(im) (im(:,:,1) + im(:,:,2) + im(:,:,3) )/3;
+
 sample = imread('Image02.jpg');
 sample = im2double(sample);
 imshow(sample);
@@ -19,5 +21,5 @@ figure; imshow(imfilter(noisy_sample_salt, mean_filt));
 figure; imshow(imfilter(noisy_sample_salt, mean_filt_5by5));
 
 %%
-
+figure; imshow(median(noisy_sample_salt,[5,5]));
 
