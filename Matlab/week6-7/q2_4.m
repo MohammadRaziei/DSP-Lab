@@ -20,6 +20,6 @@ imshow(noisy_sample_salt);
 figure; imshow(imfilter(noisy_sample_salt, mean_filt));
 figure; imshow(imfilter(noisy_sample_salt, mean_filt_5by5));
 
-%%
+%% median
 figure; imshow(median(noisy_sample_salt,[5,5]));
-
+%%
