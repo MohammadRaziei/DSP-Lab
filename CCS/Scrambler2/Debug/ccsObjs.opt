@@ -1,0 +1,1 @@
+"./Scrambler2.obj" "./vectors.obj" "../Echo_linkercmd.cmd" "../csl6713.lib" "../dsk6713bsl.lib" -llibc.a 
