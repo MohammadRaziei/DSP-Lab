@@ -1,0 +1,6 @@
+verilog work "PixCounter.v"
+verilog work "Counter.v"
+verilog work "VGA.v"
+verilog work "sliding_window.v"
+verilog work "core_sobel.v"
+verilog work "Main.v"

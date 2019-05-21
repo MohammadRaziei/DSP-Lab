@@ -1,0 +1,343 @@
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.xst" -ofn "D:/University/Courses/B.Sc/DSP_Lab/ISE/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "G:/New folder/Sobel_VGA/Main.xst" -ofn "G:/New folder/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 "Main.ngc" Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "G:/New folder/Sobel_VGA/Main.xst" -ofn "G:/New folder/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 "Main.ngc" Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "G:/New folder/Sobel_VGA/Main.xst" -ofn "G:/New folder/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 "Main.ngc" Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "G:/New folder/Sobel_VGA/Main.xst" -ofn "G:/New folder/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 "Main.ngc" Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "D:/Sobel_VGA/Main.xst" -ofn "D:/Sobel_VGA/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Main.ucf -p xc6slx9-tqg144-3 Main.ngc Main.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -mt off Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 

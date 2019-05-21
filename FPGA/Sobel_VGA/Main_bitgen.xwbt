@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Sobel_VGA\Main.ncd
+OUTFILE=D:\Sobel_VGA\Main.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Sobel_VGA
+LICENSE=WebPack
+USER_INFO=__0_0_0

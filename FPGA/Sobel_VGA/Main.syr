@@ -1,0 +1,878 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Sobel_VGA\PixCounter.v" into library work
+Parsing module <PixCounter>.
+Analyzing Verilog file "D:\Sobel_VGA\Counter.v" into library work
+Parsing module <Counter>.
+Analyzing Verilog file "D:\Sobel_VGA\VGA.v" into library work
+Parsing module <VGA>.
+Analyzing Verilog file "D:\Sobel_VGA\sliding_window.v" into library work
+Parsing module <sliding_window>.
+Analyzing Verilog file "D:\Sobel_VGA\core_sobel.v" into library work
+Parsing module <core_sobel>.
+Analyzing Verilog file "D:\Sobel_VGA\Main.v" into library work
+Parsing module <Main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\Sobel_VGA\Main.v" Line 116: Port sliding4 is not connected to this instance
+
+Elaborating module <Main>.
+WARNING:HDLCompiler:872 - "D:\Sobel_VGA\Main.v" Line 18: Using initial value of X since it is never assigned
+WARNING:HDLCompiler:872 - "D:\Sobel_VGA\Main.v" Line 19: Using initial value of Y since it is never assigned
+Reading initialization file \"Image01.list\".
+
+Elaborating module <VGA>.
+
+Elaborating module <Counter(MaxValue=32'b01100011111,Size=10)>.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\Counter.v" Line 30: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <Counter(MaxValue=32'b01000001000,Size=10)>.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\Counter.v" Line 30: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <PixCounter(AddressSize=10,TimeToBackPorchEnd=32'b010001111,TimeToDisplayTimeEnd=32'b01100001111)>.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\PixCounter.v" Line 28: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <PixCounter(AddressSize=9,TimeToBackPorchEnd=32'b011110,TimeToDisplayTimeEnd=32'b0111111110)>.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\PixCounter.v" Line 28: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "D:\Sobel_VGA\Main.v" Line 78: Assignment to TrigRefresh ignored, since the identifier is never used
+
+Elaborating module <sliding_window(WORD_SIZE=16,ROW_SIZE=640)>.
+WARNING:HDLCompiler:1127 - "D:\Sobel_VGA\Main.v" Line 109: Assignment to sliding4 ignored, since the identifier is never used
+
+Elaborating module <core_sobel(WordSize=16)>.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\core_sobel.v" Line 33: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\Sobel_VGA\core_sobel.v" Line 34: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:552 - "D:\Sobel_VGA\Main.v" Line 117: Input port sliding4[15] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Main>.
+    Related source file is "D:\Sobel_VGA\Main.v".
+        pixelNum = 15'b101100100010000
+        Width = 8'b10010110
+        Height = 8'b10011000
+        WordSize = 16
+        BlueWordSize = 5
+        GreenWordSize = 6
+        RedWordSize = 5
+        BufferSize = 3
+        RowSize = 180
+WARNING:Xst:2898 - Port 'sliding4', unconnected in block instance 'Sobel', is tied to GND.
+INFO:Xst:3210 - "D:\Sobel_VGA\Main.v" line 72: Output port <REFRESH> of the instance <VGA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Sobel_VGA\Main.v" line 99: Output port <sliding4> of the instance <my_window> is unconnected or connected to loadless signal.
+WARNING:Xst:2999 - Signal 'COLOUR_DATA', unconnected in block 'Main', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <COLOUR_DATA>, simulation mismatch.
+    Found 22800x16-bit single-port Read Only RAM <Mram_COLOUR_DATA> for signal <COLOUR_DATA>.
+    Found 16-bit register for signal <COLOUR_IN>.
+    Found 1-bit register for signal <DOWNCOUNTER>.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_2_OUT> created at line 87.
+    Found 15-bit subtractor for signal <STATE> created at line 87.
+    Found 15-bit adder for signal <GND_1_o_GND_1_o_add_3_OUT> created at line 87.
+    Found 15x8-bit multiplier for signal <n0033> created at line 87.
+    Found 10-bit comparator lessequal for signal <n0006> created at line 90
+    Found 10-bit comparator greater for signal <ADDRH[9]_GND_1_o_LessThan_8_o> created at line 90
+    Found 9-bit comparator lessequal for signal <n0010> created at line 90
+    Found 9-bit comparator greater for signal <ADDRV[8]_PWR_1_o_LessThan_10_o> created at line 90
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <Main> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "D:\Sobel_VGA\VGA.v".
+        HorzTimeToPulseWidthEnd = 10'b0001100000
+        HorzTimeToBackPorchEnd = 10'b0010010000
+        HorzTimeToDisplayTimeEnd = 10'b1100010000
+        HorzTimeToFrontPorchEnd = 10'b1100100000
+        VertTimeToPulseWidthEnd = 10'b0000000010
+        VertTimeToBackPorchEnd = 10'b0000011111
+        VertTimeToDisplayTimeEnd = 10'b0111111111
+        VertTimeToFrontPorchEnd = 10'b1000001001
+    Found 1-bit register for signal <VS>.
+    Found 16-bit register for signal <COLOUR_OUT>.
+    Found 1-bit register for signal <HS>.
+    Found 10-bit comparator greater for signal <HorzCounter[9]_GND_2_o_LessThan_2_o> created at line 64
+    Found 10-bit comparator greater for signal <VertCounter[9]_GND_2_o_LessThan_5_o> created at line 73
+    Found 10-bit comparator greater for signal <GND_2_o_HorzCounter[9]_LessThan_8_o> created at line 83
+    Found 10-bit comparator lessequal for signal <n0012> created at line 84
+    Found 10-bit comparator greater for signal <GND_2_o_VertCounter[9]_LessThan_10_o> created at line 85
+    Found 10-bit comparator lessequal for signal <n0017> created at line 86
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <Counter_1>.
+    Related source file is "D:\Sobel_VGA\Counter.v".
+        MaxValue = 32'b00000000000000000000001100011111
+        Size = 10
+        InitialValue = 32'b00000000000000000000001100011111
+    Found 1-bit register for signal <TRIGGER_OUT>.
+    Found 10-bit register for signal <TIME_COUNT>.
+    Found 10-bit adder for signal <TIME_COUNT[9]_GND_3_o_add_2_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <Counter_1> synthesized.
+
+Synthesizing Unit <Counter_2>.
+    Related source file is "D:\Sobel_VGA\Counter.v".
+        MaxValue = 32'b00000000000000000000001000001000
+        Size = 10
+        InitialValue = 32'b00000000000000000000001000001000
+    Found 1-bit register for signal <TRIGGER_OUT>.
+    Found 10-bit register for signal <TIME_COUNT>.
+    Found 10-bit adder for signal <TIME_COUNT[9]_GND_4_o_add_2_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <Counter_2> synthesized.
+
+Synthesizing Unit <PixCounter_1>.
+    Related source file is "D:\Sobel_VGA\PixCounter.v".
+        AddressSize = 10
+        TimeToBackPorchEnd = 32'b00000000000000000000000010001111
+        TimeToDisplayTimeEnd = 32'b00000000000000000000001100001111
+    Found 10-bit register for signal <PIXCOUNT>.
+    Found 10-bit adder for signal <PIXCOUNT[9]_GND_5_o_add_3_OUT> created at line 28.
+    Found 10-bit comparator greater for signal <GND_5_o_SYNCH_TIME[9]_LessThan_2_o> created at line 27
+    Found 10-bit comparator lessequal for signal <n0001> created at line 27
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <PixCounter_1> synthesized.
+
+Synthesizing Unit <PixCounter_2>.
+    Related source file is "D:\Sobel_VGA\PixCounter.v".
+        AddressSize = 9
+        TimeToBackPorchEnd = 32'b00000000000000000000000000011110
+        TimeToDisplayTimeEnd = 32'b00000000000000000000000111111110
+    Found 9-bit register for signal <PIXCOUNT>.
+    Found 9-bit adder for signal <PIXCOUNT[8]_GND_6_o_add_3_OUT> created at line 28.
+    Found 10-bit comparator greater for signal <GND_6_o_SYNCH_TIME[9]_LessThan_2_o> created at line 27
+    Found 10-bit comparator lessequal for signal <n0001> created at line 27
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <PixCounter_2> synthesized.
+
+Synthesizing Unit <sliding_window>.
+    Related source file is "D:\Sobel_VGA\sliding_window.v".
+        WORD_SIZE = 16
+        BUFFER_SIZE = 3
+        ROW_SIZE = 640
+WARNING:Xst:647 - Input <AV> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <buffer1>, simulation mismatch.
+    Found 640x16-bit single-port RAM <Mram_buffer1> for signal <buffer1>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <buffer2>, simulation mismatch.
+    Found 640x16-bit single-port RAM <Mram_buffer2> for signal <buffer2>.
+    Found 16-bit register for signal <sliding1>.
+    Found 16-bit register for signal <sliding2>.
+    Found 16-bit register for signal <sliding3>.
+    Found 16-bit register for signal <sliding4>.
+    Found 16-bit register for signal <sliding5>.
+    Found 16-bit register for signal <sliding6>.
+    Found 16-bit register for signal <sliding7>.
+    Found 16-bit register for signal <sliding8>.
+    Found 16-bit register for signal <sliding0>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred 144 D-type flip-flop(s).
+Unit <sliding_window> synthesized.
+
+Synthesizing Unit <core_sobel>.
+    Related source file is "D:\Sobel_VGA\core_sobel.v".
+        WordSize = 16
+        BlueWordSize = 5
+        GreenWordSize = 6
+        RedWordSize = 5
+WARNING:Xst:647 - Input <sliding0<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding0<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding1<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding1<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding2<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding2<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding3<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding3<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding5<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding5<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding6<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding6<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding7<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding7<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding8<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sliding8<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <outputPixel<15:11>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <outputPixel<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_1_OUT> created at line 28.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_2_OUT> created at line 28.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_4_OUT> created at line 29.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_6_OUT> created at line 30.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_7_OUT> created at line 30.
+    Found 7-bit subtractor for signal <GND_9_o_GND_9_o_sub_9_OUT> created at line 31.
+    Found 9-bit adder for signal <n0072> created at line 28.
+    Found 9-bit adder for signal <gxG> created at line 28.
+    Found 9-bit adder for signal <n0078> created at line 30.
+    Found 9-bit adder for signal <gyG> created at line 30.
+    Found 32-bit adder for signal <gxG[8]_GND_9_o_add_11_OUT> created at line 33.
+    Found 32-bit adder for signal <gyG[8]_GND_9_o_add_14_OUT> created at line 34.
+    Found 9-bit adder for signal <sumG> created at line 35.
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <core_sobel> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 22800x16-bit single-port Read Only RAM                : 1
+ 640x16-bit single-port RAM                            : 2
+# Multipliers                                          : 1
+ 15x8-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 20
+ 10-bit adder                                          : 3
+ 11-bit subtractor                                     : 1
+ 15-bit adder                                          : 1
+ 15-bit subtractor                                     : 1
+ 32-bit adder                                          : 2
+ 7-bit subtractor                                      : 6
+ 9-bit adder                                           : 6
+# Registers                                            : 20
+ 1-bit register                                        : 5
+ 10-bit register                                       : 3
+ 16-bit register                                       : 11
+ 9-bit register                                        : 1
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_0> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_1> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_2> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_3> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_4> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_11> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_12> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_13> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_14> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <COLOUR_OUT_15> has a constant value of 0 in block <VGA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sliding7_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding7_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding6_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding4_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding3_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding2_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding1_15> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_0> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_1> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_2> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_3> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_4> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_11> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_12> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_13> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_14> of sequential type is unconnected in block <my_window>.
+WARNING:Xst:2677 - Node <sliding0_15> of sequential type is unconnected in block <my_window>.
+
+Synthesizing (advanced) Unit <Counter_1>.
+The following registers are absorbed into counter <TIME_COUNT>: 1 register on signal <TIME_COUNT>.
+Unit <Counter_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_2>.
+The following registers are absorbed into counter <TIME_COUNT>: 1 register on signal <TIME_COUNT>.
+Unit <Counter_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Main>.
+	Multiplier <Mmult_n0033> in block <Main> and adder/subtractor <Madd_GND_1_o_GND_1_o_add_3_OUT> in block <Main> are combined into a MAC<Maddsub_n0033>.
+INFO:Xst:3226 - The RAM <Mram_COLOUR_DATA> will be implemented as a BLOCK RAM, absorbing the following register(s): <COLOUR_IN>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 22800-word x 16-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <STATE>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <COLOUR_IN>     |          |
+    |     dorstA         | connected to internal node          | low      |
+    | reset value        | 0000000000000000                               |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Main> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PixCounter_1>.
+The following registers are absorbed into counter <PIXCOUNT>: 1 register on signal <PIXCOUNT>.
+Unit <PixCounter_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PixCounter_2>.
+The following registers are absorbed into counter <PIXCOUNT>: 1 register on signal <PIXCOUNT>.
+Unit <PixCounter_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sliding_window>.
+INFO:Xst:3226 - The RAM <Mram_buffer1> will be implemented as a BLOCK RAM, absorbing the following register(s): <sliding2>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 640-word x 16-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <AH>            |          |
+    |     diA            | connected to signal <sliding5>      |          |
+    |     doA            | connected to signal <sliding2>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_buffer2> will be implemented as a BLOCK RAM, absorbing the following register(s): <sliding5>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 640-word x 16-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <AH>            |          |
+    |     diA            | connected to signal <sliding8>      |          |
+    |     doA            | connected to signal <sliding5>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <sliding_window> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 22800x16-bit single-port block Read Only RAM          : 1
+ 640x16-bit single-port block RAM                      : 2
+# MACs                                                 : 1
+ 15x8-to-15-bit MAC                                    : 1
+# Adders/Subtractors                                   : 15
+ 11-bit subtractor                                     : 1
+ 15-bit subtractor                                     : 1
+ 32-bit adder                                          : 2
+ 6-bit adder                                           : 1
+ 7-bit subtractor                                      : 6
+ 9-bit adder                                           : 4
+# Counters                                             : 4
+ 10-bit up counter                                     : 3
+ 9-bit up counter                                      : 1
+# Registers                                            : 133
+ Flip-Flops                                            : 133
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 5
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Main> ...
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <core_sobel> ...
+WARNING:Xst:1293 - FF/Latch <VGA/COLOUR_OUT_15> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_14> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_13> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_12> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_11> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_4> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_3> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_2> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_1> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA/COLOUR_OUT_0> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <my_window/sliding7_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding7_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding6_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding4_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding1_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding3_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_0> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_1> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_2> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_3> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_4> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_11> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_12> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_13> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_14> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <my_window/sliding0_15> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <VGA/TimeCounterVertical/TRIGGER_OUT> of sequential type is unconnected in block <Main>.
+WARNING:Xst:1293 - FF/Latch <VGA/COLOUR_OUT_5> has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA1> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA4> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA2>, <Mram_COLOUR_DATA16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA9>, <Mram_COLOUR_DATA10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA18>, <Mram_COLOUR_DATA17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA18>, <Mram_COLOUR_DATA23> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_COLOUR_DATA18>, <Mram_COLOUR_DATA24> are equivalent, second RAM is removed
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 4.
+
+Final Macro Processing ...
+
+Processing Unit <Main> :
+	Found 2-bit shift register for signal <my_window/sliding3_5>.
+	Found 2-bit shift register for signal <my_window/sliding3_6>.
+	Found 2-bit shift register for signal <my_window/sliding3_7>.
+	Found 2-bit shift register for signal <my_window/sliding3_8>.
+	Found 2-bit shift register for signal <my_window/sliding3_9>.
+	Found 2-bit shift register for signal <my_window/sliding3_10>.
+Unit <Main> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 89
+ Flip-Flops                                            : 89
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 384
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 35
+#      LUT2                        : 45
+#      LUT3                        : 35
+#      LUT4                        : 31
+#      LUT5                        : 9
+#      LUT6                        : 27
+#      MUXCY                       : 92
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 100
+# FlipFlops/Latches                : 95
+#      FD                          : 53
+#      FDE                         : 6
+#      FDR                         : 1
+#      FDRE                        : 35
+# RAMS                             : 13
+#      RAMB16BWER                  : 13
+# Shift Registers                  : 6
+#      SRLC16E                     : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      OBUF                        : 18
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              95  out of  11440     0%  
+ Number of Slice LUTs:                  195  out of   5720     3%  
+    Number used as Logic:               189  out of   5720     3%  
+    Number used as Memory:                6  out of   1440     0%  
+       Number used as SRL:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    231
+   Number with an unused Flip Flop:     136  out of    231    58%  
+   Number with an unused LUT:            36  out of    231    15%  
+   Number of fully used LUT-FF pairs:    59  out of    231    25%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    102    18%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               13  out of     32    40%  
+    Number using Block RAM only:         13
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 115   |
+COLOUR_OUT_5_OBUF                  | NONE(Msub_STATE1)      | 1     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.797ns (Maximum Frequency: 78.145MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 12.797ns (frequency: 78.145MHz)
+  Total number of paths / destination ports: 975329 / 395
+-------------------------------------------------------------------------
+Delay:               12.797ns (Levels of Logic = 4)
+  Source:            VGA/HorzPix/PIXCOUNT_4 (FF)
+  Destination:       Mram_COLOUR_DATA2 (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: VGA/HorzPix/PIXCOUNT_4 to Mram_COLOUR_DATA2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.201  VGA/HorzPix/PIXCOUNT_4 (VGA/HorzPix/PIXCOUNT_4)
+     LUT6:I1->O            4   0.203   0.684  Msub_GND_1_o_GND_1_o_sub_2_OUT_xor<6>111 (Msub_GND_1_o_GND_1_o_sub_2_OUT_xor<6>11)
+     LUT5:I4->O            5   0.205   0.714  Msub_GND_1_o_GND_1_o_sub_2_OUT_xor<9>131 (Msub_GND_1_o_GND_1_o_sub_2_OUT_xor<9>13)
+     DSP48A1:B10->PCOUT47    1   4.400   0.000  Maddsub_n0033 (Maddsub_n0033_PCOUT_to_Msub_STATE1_PCIN_47)
+     DSP48A1:PCIN47->P12   11   2.264   0.882  Msub_STATE1 (STATE<12>)
+     RAMB16BWER:ADDRA13        0.350          Mram_COLOUR_DATA22
+    ----------------------------------------
+    Total                     12.797ns (9.316ns logic, 3.481ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            VGA/VS (FF)
+  Destination:       VS (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: VGA/VS to VS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  VGA/VS (VGA/VS)
+     OBUF:I->O                 2.571          VS_OBUF (VS)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   12.797|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock COLOUR_OUT_5_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    9.301|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.84 secs
+ 
+--> 
+
+Total memory usage is 319712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  189 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+
